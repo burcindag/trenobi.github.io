@@ -3,56 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>trenobi</title>
+<title>Your Modern Website</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
   }
-  header {
-    background-color: #24292e;
-    padding: 20px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    color: #fff;
-  }
+  
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
   .logo {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto;
+    max-width: 150px;
+    height: auto;
   }
-  footer {
-    background-color: #24292e;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .logo {
+      max-width: 100px;
+    }
   }
 </style>
 </head>
 <body>
-  <header>
-    <h1>trenobi.com</h1>
-  </header>
   <div class="container">
-    <img src="src/trenobi-logo.png" alt="trenobi-logo" class="logo">
-    <p>Welcome to our modern website! This is a sample page.</p>
+    <header>
+      <img src="src/trenobi-logo.png" alt="trenobi-logo" class="logo">
+    </header>
+    
+    <!-- Rest of your website content goes here -->
+    
   </div>
-  <footer>
-    &copy; 2023 Modern Website. All rights reserved.
-  </footer>
 </body>
 </html>
+
+    
+
