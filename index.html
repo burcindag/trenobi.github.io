@@ -49,6 +49,24 @@
     background-color: #f9f9f9;
     border-radius: 10px;
   }
+  nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
 </style>
 </head>
 <body>
@@ -56,6 +74,14 @@
     <header>
       <img src="src/trenobi-logo.png" alt="trenobi-logo" class="logo">
     </header>
+
+    <nav>
+      <a href="#">Main</a>
+      <a href="#">Docs</a>
+      <a href="#">Gallery</a>
+      <a href="#">Meetings</a>
+      <a href="#">About</a>
+    </nav>
     
     <div class="text-area">
       <h2>Ölçekli model tren hobisi</h2>
