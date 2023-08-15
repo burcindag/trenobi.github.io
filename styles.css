@@ -94,3 +94,25 @@ body, ul {
     margin: 10px 0;
   }
 }
+
+/*gallery*/
+
+#photos{
+    margin-top: 30px;
+}
+
+#photos img{
+    display: block;
+    width: 100%;
+    margin-top: 9px;
+}
+
+@media (min-width: 900px){
+    #photos{
+        grid-template-columns: repeat(3, 1fr);
+        width: 900px;
+        margin: auto;
+    }
+
+}
+
