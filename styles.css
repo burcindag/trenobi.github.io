@@ -107,12 +107,13 @@ body, ul {
     margin-top: 9px;
 }
 
-@media (min-width: 900px){
+@media (min-width: 500px){
     #photos{
-        grid-template-columns: repeat(3, 1fr);
-        width: 900px;
-        margin: auto;
-    }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 6px;
 
+        margin-top: 0;
+    }
 }
 
