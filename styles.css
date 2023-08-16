@@ -30,7 +30,7 @@ body, ul {
 }
 
 .logo img {
-  height: 40px;
+  height: 64px; /*defo 40*/
 }
 
 .hamburger {
