@@ -27,7 +27,7 @@ p {
 
 /* Sections */
 .section {
-  padding: 55px 0;
+  padding: 90px 0;
   text-align: center;
 }
 
@@ -105,6 +105,11 @@ p {
   .nav-links li {
     margin: 10px 0;
   }
+  
+  .section {
+  padding: 60px 0;
+  text-align: center;
+}
 }
 
 /*gallery
