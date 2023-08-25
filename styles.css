@@ -1,9 +1,18 @@
 /* Reset some default styles */
-body, ul {
+body {
   margin: 0;
   padding: 0;
-  list-style: none;
   font-family: Arial, sans-serif;
+  background-color: #fff8f4;
+}
+
+ul{
+	list-style: none;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 /* Basic styling */
@@ -11,6 +20,9 @@ body, ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
 }
 
 /* Navigation bar */
@@ -30,7 +42,7 @@ body, ul {
 }
 
 .logo img {
-  height: 64px; /*defo 40*/
+  height: 40px;
 }
 
 .hamburger {
@@ -95,10 +107,10 @@ body, ul {
   }
 }
 
-/*gallery*/
+/*gallery
 
 #photos{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #photos img{
@@ -115,7 +127,7 @@ body, ul {
 
         margin-top: 0;
     }
-}
+}*/
 
 /* Then style the iframe to fit in the container div with full height and width */
 .iframe-container {
@@ -133,4 +145,3 @@ body, ul {
   width: 100%;
   height: 100%;
 }
-
