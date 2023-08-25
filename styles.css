@@ -19,10 +19,16 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   border: 2px solid grey;
   border-radius: 10px;
+}
+
+/* Sections */
+.section {
+  padding: 100px 0;
+  text-align: center;
 }
 
 /* Navigation bar */
@@ -72,12 +78,6 @@ p {
   color: #fff;
   font-weight: bold; /* Add bold font weight */
   font-size: 16px; /* Increase font size */
-}
-
-/* Sections */
-.section {
-  padding: 100px 0;
-  text-align: center;
 }
 
 /* Responsive styles */
