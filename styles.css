@@ -51,6 +51,11 @@ p {
   height: 40px;
 }
 
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
