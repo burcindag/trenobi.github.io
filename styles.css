@@ -11,7 +11,8 @@ ul{
 }
 
 ul.bullet {
-  list-style-type: square;
+  	list-style-type: square;
+	text-align: left;
 }
 
 p {
