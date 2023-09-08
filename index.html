@@ -70,9 +70,12 @@
       <h1>Galeri</h1>
 	    <h3>İstasyonlar</h3>
 	    <h4>ÇANKIRI, ÇERKEŞ Tren İstasyonu</h4>
-	    <div class="photo">
-	    	<img src="gallery/stations/cerkes-station-photo-01.jpg" alt="Çerkeş İstasyonu"/>
+	    
+	    <div id="photos-stations">	
+		<a href="gallery/stations/cerkes-station-photo-01.jpg"><img src="gallery/stations/cerkes-station-photo-01.jpg" alt="Çerkeş İstasyonu" width="50%" height="50%"/></a>
+		<a href="gallery/stations/cerkes-station-map.jpg"><img src="gallery/stations/cerkes-station-map.jpg" alt="Çerkeş İstasyonu Haritası" width="50%" height="50%"/></a>
 	    </div>
+	    
 	    <p>
 		    Çankırı ili Çerkeş ilçesinde yer alan tarihi tren istasyonu, 19. yüzyılın sonlarında inşa edilmiştir. Neoklasik tarzda inşa edilen istasyon, iki katlı olup, cephesi taş ve tuğladan yapılmıştır. İstasyonun çatısı ise ahşaptandır.
 		    İstasyon, Çerkeş'in en önemli tarihi yapılarından biridir. Geçmişte, Çerkeş'in ticaret ve ulaşım merkezi olarak önemli bir rol oynamıştır. 
@@ -176,6 +179,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
     <script>
         // Initialize lightgallery
+	    	lightGallery(document.getElementById('photos-stations'), {
+			animateThumb: false,
+			zoomFromOrigin: false,
+			allowMediaOverlap: true,
+			toggleThumb: true,
+			download: false,
+		});
 		lightGallery(document.getElementById('photos-tcdd'), {
 			animateThumb: false,
 			zoomFromOrigin: false,
