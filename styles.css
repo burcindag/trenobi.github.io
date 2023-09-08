@@ -10,6 +10,10 @@ ul{
 	list-style: none;
 }
 
+ul.bullet {
+  list-style-type: square;
+}
+
 p {
 	text-align: justify;
 	text-justify: inter-word;
