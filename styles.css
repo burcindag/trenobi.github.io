@@ -6,6 +6,11 @@ body {
   background-color: #fff8f4;
 }
 
+hr {
+  border: 4px solid #fff8f4;
+  border-radius: 2px;
+}
+
 ul{
 	list-style: none;
 }
