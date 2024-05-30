@@ -99,8 +99,7 @@
         <a href="gallery/steam/trenobi_steam_002.jpg"><img src="gallery/steam/trenobi_steam_002.jpg" alt="DB 41 178" width="25%" height="25%"/></a>
 	<a href="gallery/steam/trenobi_steam_003.jpg"><img src="gallery/steam/trenobi_steam_003.jpg" alt="DB 74 838" width="25%" height="25%"/></a>
     </div>
-</div>
-	<hr>  
+<hr>  
 <h3>DB/DR/DRG/SBB Buharlı Lokomotifleri</h3>
     <div id="photos-steam">
         <a href="gallery/steam/trenobi_steam_001.jpg"><img src="gallery/steam/trenobi_steam_001.jpg" alt="DRG 42 506" width="25%" height="25%"/></a>
@@ -311,6 +310,14 @@ DCC kontrol, model trenlerin daha gerçekçi ve ilgi çekici olmasını sağlar.
 		});
 
 		lightGallery(document.getElementById('photos-steam'), {
+			animateThumb: false,
+			zoomFromOrigin: false,
+			allowMediaOverlap: true,
+			toggleThumb: true,
+			download: false,
+		});
+
+	    	lightGallery(document.getElementById('photos-cars'), {
 			animateThumb: false,
 			zoomFromOrigin: false,
 			allowMediaOverlap: true,
