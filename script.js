@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // You can add more gallery initializations here as needed
     // Example for Gallery 3:
-    /*
+    
     $('#gallery3 .image-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -102,5 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    */
+    
 });
