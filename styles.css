@@ -82,6 +82,10 @@ nav {
 	height: 40px;
 }
 
+.photo img {
+  text-align: center;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
