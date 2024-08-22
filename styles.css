@@ -83,7 +83,9 @@ nav {
 }
 
 .photo img {
-  text-align: center;
+	text-align: center;
+	justify-content: center; /* Center the gallery items horizontally */
+	align-items: center; /* Center the gallery items vertically */
 }
 
 .nav-links {
