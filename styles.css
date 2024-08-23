@@ -40,7 +40,6 @@ nav {
 
 #menu li {
     position: relative;
-    padding-left: 20px;
 }
 
 #menu > li > a {
@@ -163,6 +162,9 @@ img {
         width: 350px;
         border-radius: 5px; 
     }
+	#menu li {
+    padding-left: 20px;
+}
 	
 	#menu > li > a {
 		text-align: left;
