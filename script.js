@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize the lightGallery plugin for each subgallery
+    lightGallery(document.getElementById('youtubegallery1'), {
+        plugins: [lgShare], // Enable the share plugin
+        share: true, // Ensure share is enabled
+        download: true, // Keep download enabled
+    });
     lightGallery(document.getElementById('lightgallery1'), {
         plugins: [lgShare], // Enable the share plugin
         share: true, // Ensure share is enabled
