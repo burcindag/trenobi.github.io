@@ -92,6 +92,11 @@ nav {
 	background-color: #555;
 }
 
+.dropdown li {
+	padding: 5px 20px;
+	min-width: 200px;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
