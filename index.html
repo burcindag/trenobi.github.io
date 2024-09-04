@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenobi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lg-share.min.css"> <!-- Add this line -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-share.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css">
 </head>
 
 <body>
@@ -57,12 +58,27 @@
             <p>Bu bölümde fotoğraf, resim ve videolardan oluşan içerikler yer almaktadır.</p>
             <div id="youtubegallery1" class="subgallery">
                 <h3>Trenobi Youtube Kanalından Seçmeler</h3>
+		    <!--
                 <div id="youtubegallery1" class="image-gallery">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/jzEqD7C1uWg?si=c4S80ofJJvSj_QcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/B-8C_1jGaIQ?si=byY12D4hOTI6mOwK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/4BRWDumUwro?si=qvYDCRjVf6hwVpCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 	<iframe width="560" height="315" src="https://www.youtube.com/embed/9LkydhxaXus?si=PdSR55xqZgzPDL0b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                </div>-->
+		<div id="youtubegallery" class="image-gallery">
+			<a href="https://www.youtube.com/watch?v=jzEqD7C1uWg" class="video-item" data-sub-html="<h4>Video Title 1</h4>" data-lg-size="1280-720" data-lg-video="true">
+			<img src="https://img.youtube.com/vi/jzEqD7C1uWg/hqdefault.jpg" alt="Video Thumbnail 1">
+			</a>
+			<a href="https://www.youtube.com/watch?v=B-8C_1jGaIQ" class="video-item" data-sub-html="<h4>Video Title 2</h4>" data-lg-size="1280-720" data-lg-video="true">
+			<img src="https://img.youtube.com/vi/B-8C_1jGaIQ/hqdefault.jpg" alt="Video Thumbnail 2">
+			</a>
+			<a href="https://www.youtube.com/watch?v=4BRWDumUwro" class="video-item" data-sub-html="<h4>Video Title 3</h4>" data-lg-size="1280-720" data-lg-video="true">
+			<img src="https://img.youtube.com/vi/4BRWDumUwro/hqdefault.jpg" alt="Video Thumbnail 3">
+			</a>
+			<a href="https://www.youtube.com/watch?v=9LkydhxaXus" class="video-item" data-sub-html="<h4>Video Title 4</h4>" data-lg-size="1280-720" data-lg-video="true">
+			<img src="https://img.youtube.com/vi/9LkydhxaXus/hqdefault.jpg" alt="Video Thumbnail 4">
+			</a>
+		</div>
             </div>
 		<hr>
 		<br>		
@@ -298,8 +314,9 @@ DCC kontrol, model trenlerin daha gerçekçi ve ilgi çekici olmasını sağlar.
         <p>&copy; 2023 Trenobi</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/share/lg-share.min.js"></script>
-    <script src="script.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/share/lg-share.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"></script>
+    	<script src="script.js"></script>
 </body>
 </html>
