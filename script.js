@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         download: true,
     });
 
+    lightGallery(document.getElementById('lightgallery4'), {
+        plugins: [lgShare],
+        share: true,
+        download: true,
+    });
+
     // Hamburger menu toggle
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('menu');
