@@ -1,0 +1,226 @@
+/* Genel Ayarlar */
+:root {
+    --rail-dark: #2c3e50; /* Koyu Lacivert/Demir rengi */
+    --rail-gold: #d4af37; /* Pirinç/Altın detay rengi */
+    --rail-red: #8e44ad;  /* TCDD kırmızısına yakın ton veya vurgu için */
+    --bg-cream: #f9f7f2;  /* Kağıt/Eski harita rengi arkaplan */
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-cream);
+    margin: 0;
+}
+
+/* Navigasyon Menüsü */
+header {
+    background-color: var(--rail-dark);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo a {
+    color: var(--rail-gold);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#menu li a:hover {
+    color: var(--rail-gold);
+}
+
+/* Dropdown (Açılır Menü) */
+.dropdown {
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px;
+    list-style: none;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: var(--rail-dark) !important;
+    display: block;
+    padding: 8px 0;
+}
+
+/* İçerik Konteynırı */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+    color: var(--rail-dark);
+    border-bottom: 2px solid var(--rail-gold);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Galeri Tasarımı */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Resimleri bozmadan kutuya sığdırır */
+    border-radius: 5px;
+    transition: transform 0.3s, filter 0.3s;
+    border: 3px solid #eee;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    border-color: var(--rail-gold);
+}
+
+/* Teknik Bilgiler Listesi */
+ul.bullet {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.bullet li::before {
+    content: "🚂"; /* Madde işareti yerine tren emojisi */
+    margin-right: 10px;
+}
+
+/* Görsel Kutuları */
+.photo {
+    text-align: center; /* Div içindeki her şeyi merkezle */
+    width: 100%;        /* Genişliğin tam olduğundan emin ol */
+    margin: 20px 0;    /* Üstten ve alttan biraz nefes payı bırakır */
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
+}
+
+/* Kitap listesindeki görseller için özel ayar */
+ul.bullet li img {
+	display: block;      /* Ortalama için block olması gerekir */
+    margin: 15px auto;   /* Üst/Alt 15px, Sağ/Sol otomatik (ortalar) */
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Masaüstünde kitap görsellerinin çok devasa görünmemesi için sınır koyalım */
+@media (min-width: 769px) {
+    ul.bullet li img {
+        max-width: 350px; 
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--rail-dark);
+    color: white;
+    margin-top: 50px;
+}
+
+/* Responsive (Mobil Uyumluluk) */
+@media (max-width: 768px) {
+    #menu {
+        display: none; /* Mobilde varsayılan olarak kapalı */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Header yüksekliğine göre ayarlayın */
+        left: 0;
+        width: 100%;
+        background-color: #2c3e50; /* Kendi koyu renginiz */
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    /* JavaScript burayı tetikliyor */
+    #menu.show {
+        display: flex !important;
+    }
+
+    #menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #menu li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: flex !important; /* Hamburgeri mobilde göster */
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+    }
+}
