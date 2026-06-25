@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Smooth scrolling to sections
-    menuItems.forEach(item => {
+    /*menuItems.forEach(item => {
         item.addEventListener('click', function(event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
@@ -74,6 +74,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: targetSection.offsetTop - 80,
                 behavior: 'smooth'
             });
+        });
+    });*/
+    // Smooth scrolling to sections (Sadece sayfa içi # linkleri için)
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            const href = this.getAttribute('href');
+            
+            // Eğer link '#' ile başlıyorsa sayfa içi kaydırma yap
+            if (href && href.startsWith('#')) {
+                event.preventDefault();
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            // Eğer '#' ile başlamıyorsa (en/index.html gibi gerçek bir linkse) 
+            // event.preventDefault() çalışmayacak ve tarayıcı normal şekilde sayfaya gidecektir.
         });
     });
 });
