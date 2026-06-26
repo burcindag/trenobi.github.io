@@ -223,4 +223,17 @@ footer {
         height: 3px;
         background-color: white;
     }
+
+	/* MOBİL İÇİN DROPDOWN DÜZENLEMESİ */
+    .dropdown-content {
+        position: static; /* Mobilde mutlak konumlandırmayı iptal edip normal akışa alıyoruz */
+        box-shadow: none; /* Arka plan gölgesini kaldırıyoruz */
+        padding-left: 20px; /* Seçeneklerin biraz içeride görünmesi için */
+        background-color: rgba(255, 255, 255, 0.05); /* Menü arka planından hafifçe ayırt edilmesi için çok hafif şeffaf beyaz */
+    }
+
+    .dropdown-content li a {
+        color: white !important; /* Mobilde yazı rengini beyaz yapıyoruz ki koyu menüde okunsun */
+        padding: 10px 0;
+    }
 }
